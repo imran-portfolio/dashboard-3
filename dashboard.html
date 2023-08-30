@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<div class="main_wrapper">
+  <div class="dashboard_wrapper">
+    <div class="toolbar_left">
+    <ul class="toolbar_menu toolbar_menu_top">
+    	<li class="menu_item">
+        <a href="#" class="menu_link"><span class="icon menu_icon home_menu_icon"></span></a>
+        </li>
+    	<li class="menu_item">
+        <a href="#" class="menu_link"><span class="icon menu_icon options_menu_icon"></span></a>
+        </li>
+    	<li class="menu_item">
+        <a href="#" class="menu_link"><span class="user_menu"><img src="images/a-imgpng.png"></span></a>
+        </li>
+    	<li class="menu_item">
+        <a href="#" class="menu_link"><span class="icon menu_icon db_menu_icon"></span></a>
+        </li>
+    	<li class="menu_item">
+        <a href="#" class="menu_link"><span class="icon menu_icon calandar_menu_icon"></span></a>
+        </li>
+    </ul>
+    
+    <ul class="toolbar_menu toolbar_menu_bottom">
+    	<li class="menu_item">
+        <a href="#" class="menu_link"><span class="icon menu_icon setting_menu_icon"></span></a>
+        </li>
+    	<li class="menu_item">
+        <a href="#" class="menu_link"><span class="icon menu_icon notify_menu_icon"></span></a>
+        </li> 
+    	<li class="menu_item">
+        <a href="#" class="menu_link"><span class="icon menu_icon icon_search"></span></a>
+        </li>
+    	<li class="menu_item">
+        <a href="#" class="menu_link"><span class="icon menu_icon info_menu_icon"></span></a>
+        </li>
+        <li class="menu_item">
+        <a href="#" class="menu_link"><span class="icon menu_icon n_list_menu_icon"></span></a>
+        </li>
+    </ul>
+    
+    </div>
+    <div class="main_container">
+    <div class="top_bar">
+    <h3>Campaigns</h3>
+    <div class="topbar_right">
+    	<span class="updated_time">Updated 20 minutes ago</span>
+        <a href="#" class="btn btn_refresh"><span class="icon icon_refresh"></span></a>
+        <a href="#" class="btn disabled" disabled="disabled">Discard drafts</a>
+        <a href="#" class="btn disabled" disabled="disabled">Review and publish</a>
+        <a href="#" class="btn btn_tb_menu"><span class="icon icon_tb_menu"></span></a>
+    </div>
+    </div>
+    <div class="top_search_bar">
+    	<div class="top_search">
+        <span class="icon icon_search"></span>
+        <input type="text" placeholder="Search and filter...">
+        </div>
+        <button class="btn dropdown-btn">
+        Last month: May 1, 2022 – May 31, 2022
+        <span class="icon dd-icon"></span>
+        </button>
+    </div>
+    
+    <div class="tab_buttons_bar">
+    	<div class="tab_btn active"><span class="icon campaigns_icon"></span>Campaigns </div>
+    	<div class="tab_btn"><span class="icon ad_sets_icon"></span> Ad sets</div>
+    	<div class="tab_btn"><span class="icon ads_icon"></span> Ads</div>
+    </div>
+    
+    <div class="tabs_content_container">
+    	<div class="tabs_content_header">
+            <div class="action_bar action_bar_left">
+                <a href="#" class="btn btn-large btn-success">+&nbsp;&nbsp; Create</a>
+                <a href="#" class="btn btn-large btn-dd">
+                    <span class="icon icon-mini dup_icon"></span>
+                    Duplicate <span class="dd-icon-wrap"><small class="icon dd-icon"></small></span>
+                </a>
+                <a href="#" class="btn btn-large btn-dd">
+                    <span class="icon icon-mini edit_icon"></span>
+                    Edit <span class="dd-icon-wrap"><small class="icon dd-icon"></small></span>
+                </a>
+                
+                <a href="#" class="btn btn_tb_menu"><span class="icon icon_tb_menu"></span></a>
+            </div>
+ 
+            <div class="action_bar action_bar_right"> 
+                <a href="#" class="btn btn-large btn-dd">
+                    <span class="icon icon-mini column_icon"></span>
+                    Columns <span class="dd-icon-wrap"><small class="icon dd-icon"></small></span>
+                </a>
+                <a href="#" class="btn btn-large btn-dd">
+                    <span class="icon icon-mini breakdown_icon"></span>
+                    Breakdown <span class="dd-icon-wrap"><small class="icon dd-icon"></small></span>
+                </a> 
+                <a href="#" class="btn btn-large btn-dd"> 
+                    Reports <span class="dd-icon-wrap"><small class="icon dd-icon"></small></span>
+                </a> 
+            </div> 
+        </div>
+        
+        <div class="table_wrap">
+        	<table class="table table-bordered table-striped table-scroll">
+            	<thead>
+                	<tr>
+                    	<th class="freez_col freez_col_1">
+                        	<input class="checkbox-normal" type="checkbox" id="ch_c1_1">
+                            On / Off
+                        </th>
+                    	<th class="freez_col freez_col_2">Campaign <small class="icon dd-icon"></small></th>
+                    	<th>Attribution setting <small class="icon dd-icon"></small></th>
+                    	<th>Frequency <small class="icon dd-icon"></small></th>
+                    	<th>CPC (ALL) <small class="icon dd-icon"></small></th>
+                    	<th>CTR (link click-through rate) <small class="icon dd-icon"></small></th>
+                    	<th>Adds to cart <small class="icon dd-icon"></small></th>
+                    	<th>Attribution setting <small class="icon dd-icon"></small></th>
+                    	<th>Frequency <small class="icon dd-icon"></small></th>
+                    	<th>CPC (ALL) <small class="icon dd-icon"></small></th>
+                    	<th>CTR (link click-through rate) <small class="icon dd-icon"></small></th>
+                    	<th>Adds to cart <small class="icon dd-icon"></small></th>
+                    </tr>
+                </thead>
+                <tbody>
+                	<tr>
+                    	<td class="freez_col freez_col_1">
+                        <input class="checkbox-normal" type="checkbox" id="ch_c1_2">
+                        <label class="switch">
+                        <input type="checkbox">
+                        <span class="switch-slider"></span>
+                        </label>
+                        </td>
+                        <td class="freez_col freez_col_2"><a href="#">Lorem ipsum simply dummy text</a></td>
+                        <td>7 clicks or...</td>
+                        <td>2.66</td>
+                        <td>£0.10</td>
+                        <td>5.91%</td>
+                        <td>430</td>
+                        <td>7 clicks or...</td>
+                        <td>2.66</td>
+                        <td>£0.10</td>
+                        <td>5.91%</td>
+                        <td>430</td>
+                    </tr>
+                	<tr>
+                    	<td class="freez_col freez_col_1">
+                        <input class="checkbox-normal" type="checkbox" id="ch_c1_2">
+                        <label class="switch">
+                        <input type="checkbox">
+                        <span class="switch-slider"></span>
+                        </label>
+                        </td>
+                        <td class="freez_col freez_col_2"><a href="#">Lorem ipsum simply dummy text</a></td>
+                        <td>7 clicks or...</td>
+                        <td>2.66</td>
+                        <td><span class="underline_value">£0.10</span></td>
+                        <td><span class="underline_value">£6,1263.35</span><sup>[2]</sup></td>
+                        <td>
+                        	<span class="inline_data"><span class="underline_value">3.40</span>
+                            <small class="det_text">Website Purchases</small>
+                            </span><sup>[2]</sup> 
+                        </td>
+                        <td>7 clicks or...</td>
+                        <td>
+                        	<span class="underline_value">2.66</span><sup>[2]</sup>
+                        	<small class="det_text">Website Purchases</small>
+                        </td>
+                        <td>£0.10</td>
+                        <td>5.91%</td>
+                        <td>430</td>
+                    </tr>
+                	<tr>
+                    	<td class="freez_col freez_col_1">
+                        <input class="checkbox-normal" type="checkbox" id="ch_c1_2">
+                        <label class="switch">
+                        <input type="checkbox">
+                        <span class="switch-slider"></span>
+                        </label>
+                        </td>
+                        <td class="freez_col freez_col_2"><a href="#">Lorem ipsum simply dummy text</a></td>
+                        <td>7 clicks or...</td>
+                        <td>2.66</td>
+                        <td><span class="underline_value">£0.10</span></td>
+                        <td><span class="underline_value">£6,1263.35</span><sup>[2]</sup></td>
+                        <td>
+                        	<span class="inline_data"><span class="underline_value">3.40</span>
+                            <small class="det_text">Website Purchases</small>
+                            </span><sup>[2]</sup> 
+                        </td>
+                        <td>7 clicks or...</td>
+                        <td>
+                        	<span class="underline_value">2.66</span><sup>[2]</sup>
+                        	<small class="det_text">Website Purchases</small>
+                        </td>
+                        <td>£0.10</td>
+                        <td>5.91%</td>
+                        <td>430</td>
+                    </tr>
+                	<tr>
+                    	<td class="freez_col freez_col_1">
+                        <input class="checkbox-normal" type="checkbox" id="ch_c1_2">
+                        <label class="switch">
+                        <input type="checkbox">
+                        <span class="switch-slider"></span>
+                        </label>
+                        </td>
+                        <td class="freez_col freez_col_2"><a href="#">Lorem ipsum simply dummy text</a></td>
+                        <td>7 clicks or...</td>
+                        <td>2.66</td>
+                        <td><span class="underline_value">£0.10</span></td>
+                        <td><span class="underline_value">£6,1263.35</span><sup>[2]</sup></td>
+                        <td>
+                        	<span class="inline_data"><span class="underline_value">3.40</span>
+                            <small class="det_text">Website Purchases</small>
+                            </span><sup>[2]</sup> 
+                        </td>
+                        <td>7 clicks or...</td>
+                        <td>
+                        	<span class="underline_value">2.66</span><sup>[2]</sup>
+                        	<small class="det_text">Website Purchases</small>
+                        </td>
+                        <td>£0.10</td>
+                        <td>5.91%</td>
+                        <td>430</td>
+                    </tr>
+                	<tr>
+                    	<td class="freez_col freez_col_1">
+                        <input class="checkbox-normal" type="checkbox" id="ch_c1_2">
+                        <label class="switch">
+                        <input type="checkbox">
+                        <span class="switch-slider"></span>
+                        </label>
+                        </td>
+                        <td class="freez_col freez_col_2"><a href="#">Lorem ipsum simply dummy text</a></td>
+                        <td>7 clicks or...</td>
+                        <td>2.66</td>
+                        <td><span class="underline_value">£0.10</span></td>
+                        <td><span class="underline_value">£6,1263.35</span><sup>[2]</sup></td>
+                        <td>
+                        	<span class="inline_data"><span class="underline_value">3.40</span>
+                            <small class="det_text">Website Purchases</small>
+                            </span><sup>[2]</sup> 
+                        </td>
+                        <td>7 clicks or...</td>
+                        <td>
+                        	<span class="underline_value">2.66</span><sup>[2]</sup>
+                        	<small class="det_text">Website Purchases</small>
+                        </td>
+                        <td>£0.10</td>
+                        <td>5.91%</td>
+                        <td>430</td>
+                    </tr>
+                	<tr>
+                    	<td class="freez_col freez_col_1">
+                        <input class="checkbox-normal" type="checkbox" id="ch_c1_2">
+                        <label class="switch">
+                        <input type="checkbox">
+                        <span class="switch-slider"></span>
+                        </label>
+                        </td>
+                        <td class="freez_col freez_col_2"><a href="#">Lorem ipsum simply dummy text</a></td>
+                        <td>7 clicks or...</td>
+                        <td>2.66</td>
+                        <td><span class="underline_value">£0.10</span></td>
+                        <td><span class="underline_value">£6,1263.35</span><sup>[2]</sup></td>
+                        <td>
+                        	<span class="inline_data"><span class="underline_value">3.40</span>
+                            <small class="det_text">Website Purchases</small>
+                            </span><sup>[2]</sup> 
+                        </td>
+                        <td>7 clicks or...</td>
+                        <td>
+                        	<span class="underline_value">2.66</span><sup>[2]</sup>
+                        	<small class="det_text">Website Purchases</small>
+                        </td>
+                        <td>£0.10</td>
+                        <td>5.91%</td>
+                        <td>430</td>
+                    </tr>
+                	<tr>
+                    	<td class="freez_col freez_col_1">
+                        <input class="checkbox-normal" type="checkbox" id="ch_c1_2">
+                        <label class="switch">
+                        <input type="checkbox">
+                        <span class="switch-slider"></span>
+                        </label>
+                        </td>
+                        <td class="freez_col freez_col_2"><a href="#">Lorem ipsum simply dummy text</a></td>
+                        <td>7 clicks or...</td>
+                        <td>2.66</td>
+                        <td><span class="underline_value">£0.10</span></td>
+                        <td><span class="underline_value">£6,1263.35</span><sup>[2]</sup></td>
+                        <td>
+                        	<span class="inline_data"><span class="underline_value">3.40</span>
+                            <small class="det_text">Website Purchases</small>
+                            </span><sup>[2]</sup> 
+                        </td>
+                        <td>7 clicks or...</td>
+                        <td>
+                        	<span class="underline_value">2.66</span><sup>[2]</sup>
+                        	<small class="det_text">Website Purchases</small>
+                        </td>
+                        <td>£0.10</td>
+                        <td>5.91%</td>
+                        <td>430</td>
+                    </tr>
+                	<tr>
+                    	<td class="freez_col freez_col_1">
+                        <input class="checkbox-normal" type="checkbox" id="ch_c1_2">
+                        <label class="switch">
+                        <input type="checkbox">
+                        <span class="switch-slider"></span>
+                        </label>
+                        </td>
+                        <td class="freez_col freez_col_2"><a href="#">Lorem ipsum simply dummy text</a></td>
+                        <td>7 clicks or...</td>
+                        <td>2.66</td>
+                        <td><span class="underline_value">£0.10</span></td>
+                        <td><span class="underline_value">£6,1263.35</span><sup>[2]</sup></td>
+                        <td>
+                        	<span class="inline_data"><span class="underline_value">3.40</span>
+                            <small class="det_text">Website Purchases</small>
+                            </span><sup>[2]</sup> 
+                        </td>
+                        <td>7 clicks or...</td>
+                        <td>
+                        	<span class="underline_value">2.66</span><sup>[2]</sup>
+                        	<small class="det_text">Website Purchases</small>
+                        </td>
+                        <td>£0.10</td>
+                        <td>5.91%</td>
+                        <td>430</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+    </div>
+    <div class="toolbar_right"></div>
+  </div>
+</div>
+</body>
+</html>
